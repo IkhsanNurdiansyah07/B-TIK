@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "966188219225",
+    "project_id": "b-tik-962d6",
+    "storage_bucket": "b-tik-962d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966188219225:android:cf3cd07a07ef6b1a96aa48",
+        "android_client_info": {
+          "package_name": "com.example.btik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966188219225-1mbrilo1spsdv6prcq646361r0o157og.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.btik",
+            "certificate_hash": "3976411dcfd1b47f387d4774e6180ee93b1a5860"
+          }
+        },
+        {
+          "client_id": "966188219225-t6frbgv008cq1vg3h6rd958a5a09jcf9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNM4-zdsXiBVe5k4ISlXIrWM-kI_vKIxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966188219225-t6frbgv008cq1vg3h6rd958a5a09jcf9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
