@@ -28,7 +28,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.loginBtn.setOnClickListener{
-            startActivity(Intent(this, DashboardActivity ::class.java))
+
             val email = binding.loginEmail.text.toString()
             val password = binding.loginPassword.text.toString()
 
@@ -59,9 +59,9 @@ class LoginActivity : AppCompatActivity() {
                 binding.loginPassword.requestFocus()
                 return@setOnClickListener
             }
+            startActivity(Intent(this, DashboardActivity ::class.java))
 
             RegisterFirebase(email, password)
-
         }
     }
 
