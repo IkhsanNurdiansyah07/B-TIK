@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/congrats"
+        android:layout_width="329dp"
+        android:layout_height="302dp"
+        android:layout_marginTop="92px"
+        android:layout_marginLeft="43px"
+        android:background="@drawable/petasan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/teks1"
+        android:layout_width="276dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lato"
+        android:text="Congtrats! Your Order has been Placed"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/congrats"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/teks2"
+        android:layout_width="196dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:textColor="#A1A1A1"
+        android:text="Your items is been placed and is on it's way to being process"
+        app:layout_constraintTop_toBottomOf="@id/teks1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/no_resi"
+        android:layout_width="316dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button"
+        android:text="no.resi"
+        android:drawableLeft="@drawable/shipping_car"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/teks2" />
+
+    <Button
+        android:id="@+id/back_home"
+        android:layout_width="316dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:text="BACK TO HOME"
+        app:layout_constraintTop_toBottomOf="@id/no_resi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
