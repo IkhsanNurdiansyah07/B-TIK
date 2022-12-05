@@ -14,6 +14,17 @@
         android:theme="@style/Theme.Btik"
         tools:targetApi="31">
         <activity
+            android:name=".ProductViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/Theme.Btik.NoActionBar" />
+        <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>

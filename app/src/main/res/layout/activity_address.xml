@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/teks_atas"
+        android:layout_width="106dp"
+        android:layout_height="17dp"
+        android:text="Delivery Address"
+        android:fontFamily="@font/lato"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:layout_width="81dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="26dp"
+        android:text="Street"
+        app:layout_constraintBottom_toTopOf="@id/street"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="19dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/back_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/teks_atas"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/street"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/custom_box_address"
+        app:layout_constraintTop_toBottomOf="@id/teks_atas"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:layout_width="81dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="26dp"
+        android:text="City"
+        app:layout_constraintBottom_toTopOf="@id/city"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="218dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="25dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/custom_box_address"
+        app:layout_constraintTop_toBottomOf="@id/street"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+
+    <EditText
+        android:id="@+id/no_hp"
+        android:layout_width="218dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="25dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/custom_box_address"
+        app:layout_constraintTop_toBottomOf="@id/city"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="26dp"
+        android:text="Phone Number"
+        app:layout_constraintBottom_toTopOf="@id/no_hp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/postal_code"
+        android:layout_width="218dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="25dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/custom_box_address"
+        app:layout_constraintTop_toBottomOf="@id/no_hp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="26dp"
+        android:text="Postal Code"
+        app:layout_constraintBottom_toTopOf="@id/postal_code"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:layout_width="343dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/roboto"
+        android:text="SAVE"
+        android:textStyle="bold"
+        android:background="@drawable/custom_button2"
+        app:layout_constraintTop_toBottomOf="@id/postal_code"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+
+        
+</androidx.constraintlayout.widget.ConstraintLayout>

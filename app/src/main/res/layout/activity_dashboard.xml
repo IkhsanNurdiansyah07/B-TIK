@@ -1,18 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".dashboard.DashboardActivity">
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ini dashboard"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
 
-        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".dashboard.Dashboard">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/burger_button"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:text="B-TIK"
+                android:fontFamily="@font/spartan_semibold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/search_box"
+            android:layout_width="316dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:hint="What do you looking for?"
+            android:fontFamily="@font/futura_medium"
+            android:drawableLeft="@drawable/search_icon"
+            android:textSize="12sp"
+            android:textColorHint="#888E9A"
+            android:background="@drawable/custom_search_text"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleProduct"
+            tools:listitem="@layout/item_list_barang"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</layout>

@@ -3,5 +3,6 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/lato</item>
         <item>@font/roboto</item>
+        <item>@font/spartan_semibold</item>
     </array>
 </resources>

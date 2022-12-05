@@ -1,12 +1,12 @@
-package com.example.btik.dashboard
+package com.example.btik.EditProfile
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.btik.R
 
-class DashboardActivity : AppCompatActivity() {
+class EditProfile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dashboard)
+        setContentView(R.layout.activity_edit_profile)
     }
 }
